@@ -119,3 +119,7 @@ button:hover .two{
     animation: 5s show2 ease-in-out;
     animation-delay: 0.5s;
 }
+
+button:active, button:focus {
+  outline: none !important;
+}
