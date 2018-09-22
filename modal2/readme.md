@@ -1,1 +1,1 @@
-https://Tory777.github.io/modal2/
+https://Tory777.github.io/modal2/index.html
