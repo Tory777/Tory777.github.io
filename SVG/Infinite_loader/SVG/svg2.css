@@ -1,0 +1,135 @@
+/*
+stroke-dasharray="20 1000"
+
+
+*circle {
+  animation: dash 2s linear infinite;
+}
+
+@keyframes sketchIn {
+	0% {
+		stroke-dashoffset: 778;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes sketchOut {
+	0% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 778;
+	}
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+
+circle{
+	transform: rotate(360deg);
+}
+
+.small{
+	animation-name: sketchIn;
+	animation-duration: 5s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(300deg);
+  }
+}
+*/
+
+
+@keyframes asd{
+	0% {
+		
+		stroke-dashoffset: 0%;
+	}
+	50% {
+		stroke-dashoffset: -50%;
+	}
+
+	100%{
+		stroke-dashoffset: -100%;
+	}
+}
+
+@keyframes asd2{
+	0% {
+		
+		stroke-dashoffset: 1%;
+	}
+	50% {
+		stroke-dashoffset: -49%;
+	}
+
+	100%{
+		stroke-dashoffset: -99%;
+	}
+}
+
+@keyframes asd3{
+	0% {
+		
+		stroke-dashoffset: 2%;
+	}
+	50% {
+		stroke-dashoffset: -48%;
+	}
+
+	100%{
+		stroke-dashoffset: -98%;
+	}
+}
+
+@keyframes asd4{
+	0% {
+		
+		stroke-dashoffset: 3%;
+	}
+	50% {
+		stroke-dashoffset: -47%;
+	}
+
+	100%{
+		stroke-dashoffset: -97%;
+	}
+}
+
+@keyframes asd5{
+	0% {
+		
+		stroke-dashoffset: 4%;
+	}
+	50% {
+		stroke-dashoffset: -46%;
+	}
+
+	100%{
+		stroke-dashoffset: -96%;
+	}
+}
+
+.small{
+	animation: 3s asd linear infinite forwards;
+}
+.small2{
+	animation: 3s asd2 linear infinite forwards;
+}
+.small3{
+	animation: 3s asd3 linear infinite forwards;
+}
+.small4{
+	animation: 3s asd4 linear infinite forwards;
+}
+.small5{
+	animation: 3s asd5 linear infinite forwards;
+}
+
+
