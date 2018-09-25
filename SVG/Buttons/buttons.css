@@ -39,25 +39,33 @@ body {
     left: 0;
     margin: 50px auto;
 }
+
 .block1{
+	box-sizing: border-box;
+	height: 200px;
 	background-color: #FFF5EE;
+	padding-left: 12%;
+	padding-top: 5%;
 }
+
 .block2{
+	box-sizing: border-box;
+	height: 200px;
 	background-color: #1c1d1e;
+	padding-left: 12%;
+	padding-top: 5%;
 }
 
 .button2{
 	width: 0px;
 	position: absolute;
     transform: translateX(150px);
-    /*transition: 1s;*/
     opacity: 0;
 }
 
 svg:hover .button2{
 	animation: 0.5s a_but linear;
 	animation-fill-mode:  forwards;
-
 }
 
 svg:hover .text{
