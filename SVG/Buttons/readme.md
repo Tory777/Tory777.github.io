@@ -1,1 +1,1 @@
-http://Tory777.github.io/SVG/ Buttons/
+http://Tory777.github.io/SVG/Buttons/
