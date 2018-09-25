@@ -1,0 +1,59 @@
+/*Длинна окружности = 2*П*R = 2*3,14*125 =  785 
+	785 > 100%
+	549.5 >   70% |
+	314   >   40%
+	78.5 >    10% */
+
+@keyframes load30 {
+	40% {		
+  		stroke-dashoffset: 549.5;
+	}
+	100% {		
+  		stroke-dashoffset: 549.5;
+	}
+}
+@keyframes load60 {
+	40% {
+		stroke-dashoffset: 314;
+	}
+	100% {
+		stroke-dashoffset: 314;
+	}
+}
+@keyframes load90 {
+	40% {
+		stroke-dashoffset: 78.5;
+	}
+	100% {
+		stroke-dashoffset: 78.5;
+	}
+}
+
+.text{
+	 font: 70px 'Verdana';
+}
+
+.small{
+	stroke-linecap: round;
+	stroke-dasharray: 785;
+  	stroke-dashoffset: 785;
+  	/*animation-fill-mode: both;*/
+ 	transform-origin: 42.75% 42.75%;
+	transform: rotate(-90deg);
+}
+
+.l30{
+ 	animation: 2s load30 linear infinite;
+ 	animation-fill-mode: forwards;
+}
+
+.l60{
+ 	animation: 2s load60 linear infinite;
+ 	animation-fill-mode: both;
+}
+
+.l90{
+ 	animation: 2s load90 linear infinite;
+ 	animation-fill-mode: both;
+}
+
