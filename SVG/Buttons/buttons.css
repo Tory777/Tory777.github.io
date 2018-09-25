@@ -42,17 +42,17 @@ body {
 
 .block1{
 	box-sizing: border-box;
-	height: 200px;
+	height: 250px;
 	background-color: #FFF5EE;
-	padding-left: 12%;
+	padding-left: 20%;
 	padding-top: 5%;
 }
 
 .block2{
 	box-sizing: border-box;
-	height: 200px;
+	height: 300px;
 	background-color: #1c1d1e;
-	padding-left: 12%;
+	padding-left: 25%;
 	padding-top: 5%;
 }
 
