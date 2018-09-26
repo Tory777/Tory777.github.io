@@ -28,7 +28,7 @@ body {
     padding: 10% 20%;
 }
 
-.container:hover .cross{
+svg:hover .cross{
 	stroke: red;
 }
 
@@ -40,17 +40,17 @@ body {
 	transform-origin: 50px 140px;
 }
 
-.container:hover .line1{
+svg:hover .line1{
 	transform: translateY(5%);
 	transform: rotate(45deg);
 	transition: all 1s ease-in-out;
 }
 
-.container:hover .line2{
+svg:hover .line2{
     opacity: 0;
 }
 
-.container:hover .line3{
+svg:hover .line3{
 	transform: rotate(-45deg);
 	transition: all 1s ease-in-out;
 	transform: translateY(-5%) rotate(-45deg);
