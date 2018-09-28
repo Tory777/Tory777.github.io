@@ -1,1 +1,1 @@
-http://Tory777.github.io/SVG/Adapt_rect/index.html
+http://Tory777.github.io/SVG/Adapt_rect/
