@@ -1,0 +1,91 @@
+  body {
+    text-align: center;
+     background: #E6E6FA;
+  }
+.svg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  rect {
+    position: relative;
+  }
+  img {
+    position: absolute;
+    width: 790px;
+    height: 390px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width:1800px) {
+    .svg-container {
+      width: 800px;
+      height: 400px;
+    }
+    .img {
+      width: 790px;
+      height: 390px;
+    }
+   rect {
+      width: 800px;
+      height: 400px;
+    }
+  }
+  @media screen and (min-width:1200px) and (max-width: 1800px) {
+    .svg-container {
+      width: 600px;
+      height: 300px;
+    }
+    .img {
+      width: 590px;
+      height: 290px;
+    }
+   rect {
+      width: 600px;
+      height: 300px;
+    }
+  }
+  @media screen and (min-width:960px) and (max-width:1200px) {
+    .svg-container {
+      width: 500px;
+      height: 250px;
+    }
+    .img {
+      width: 490px;
+      height: 240px;
+    }
+  rect {
+      width: 500px;
+      height: 250px;
+    }
+  }
+  @media screen and (min-width:768px) and (max-width:960px) {
+  .svg-container {
+      width: 400px;
+      height: 200px;
+    }
+    .img{
+      width: 390px;
+      height: 190px;
+    }
+    rect {
+      width: 400px;
+      height: 200px;
+    }
+  }
+  @media screen and (min-width:320px) and (max-width:768px) {
+  .svg-container {
+      width: 250px;
+      height: 150px;
+    }
+    .img {
+      width: 240px;
+      height: 140px;
+    }
+    rect {
+      width: 250px;
+      height: 150px;
+    }
+  }
