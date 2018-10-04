@@ -1,0 +1,22 @@
+{
+  "name": "tory777.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tory777/Tory777.github.io.git"
+  },
+  "author": "Tory <viktoriiageryk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tory777/Tory777.github.io/issues"
+  },
+  "homepage": "https://github.com/Tory777/Tory777.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
