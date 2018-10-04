@@ -1,0 +1,14 @@
+
+
+.stair {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  width: 15px;
+  height: 15px;
+}
+
+@for $i from 1 through 5 {
+   .st-#{$i}{
+    	margin-left: 25px * $i;
+}
+}

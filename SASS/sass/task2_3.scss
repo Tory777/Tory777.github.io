@@ -1,0 +1,35 @@
+/*2 task*/
+@import 'task1_vars.scss';
+
+button{
+	height: 40px;
+	padding-left: $mainSize;
+	padding-right: $mainSize;
+
+&:active {
+	background: $buttonBackActiveColor;
+}
+&:focus {
+	background: $buttonBackColor;
+}
+&:hover {
+	background: $backColor;
+}
+}
+/*3 task*/
+.tasks__wrapper3 {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+  & li { 
+  	display: block; 
+  	padding: 6px 20px;
+  	background: $ColorForTask3;
+  	border: 1px solid $buttonBackActiveColor;
+  	margin-top: $StandartMargin;
+  	width: $StandartWidth;
+	}
+}

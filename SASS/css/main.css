@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/*1 task*/
+/*2 task*/
+/*1 task*/
+button {
+  height: 40px;
+  padding-left: 14px;
+  padding-right: 14px; }
+  button:active {
+    background: #334432; }
+  button:focus {
+    background: #2a602d; }
+  button:hover {
+    background: #ffcccc; }
+
+/*3 task*/
+.tasks__wrapper3 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.tasks__wrapper3 li {
+  display: block;
+  padding: 6px 20px;
+  background: purple;
+  border: 1px solid #334432;
+  margin-top: 30px;
+  width: 300px; }
+
+/*4 task*/
+/*1 task*/
+.tasks__wrapper li {
+  background: pink;
+  border: dashed 2px grey;
+  font-size: 14px;
+  color: #333;
+  font-family: "Helvetica";
+  width: calc(33% - 5px);
+  text-align: center; }
+
+.tasks__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 10px 0; }
+
+.tasks__wrapper li {
+  display: inline-block;
+  padding: 20px 0; }
+
+/*task5 Create a sass mixin for styling next HTML, rules for styling are:
+ "every next .rules__item should have font-size bigger then previous on 1px, and it should have randow color"*/
+/*
+@mixin fontSize($size: 14) {
+  font-size: ($size / $baseSize) + rem;
+}
+
+%greyBorder {
+  border: 1px solid $mainBorderColor;
+}
+*/
+/*1 task*/
+/*
+$icon-success   : 	url(‘img/success.png’);
+$icon-inform    :	url(‘img/inform.png’);
+$icon-warn 		: 	url(‘img/warn.png’);
+$icon-ops 	 : 		url(‘img/ops.png’);
+
+
+$icons_form: (
+ success        : $icon-width,
+ warning        : $icon-width,
+ info           : $icon-width,
+ ops			: $icon-width
+);
+*/
+.mess {
+  width: 300px;
+  color: #ffffff;
+  padding: .5rem;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .mess img {
+    margin-top: 15px;
+    margin-left: 15px; }
+  .mess--success {
+    background-color: #32CD32;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--error {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--warning {
+    background-color: #FF8C00;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--info {
+    background-color: #00BFFF;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--ops {
+    background-color: #ff0000;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--success {
+    height: 75px; }
+  .mess--error {
+    height: 100px; }
+  .mess--warning {
+    height: 75px; }
+  .mess--info {
+    height: 50px; }
+  .mess--ops {
+    height: 75px; }
+
+.mess--error {
+  color: #ff0000;
+  border: 1px solid grey;
+  margin-top: 0;
+  margin-left: 0; }
+
+.rules__item:nth-child(1) {
+  background-color: #142801; }
+
+.rules__item:nth-child(2) {
+  background-color: #285002; }
+
+.rules__item:nth-child(3) {
+  background-color: #3c7803; }
+
+.rules__item:nth-child(4) {
+  background-color: #50a004; }
+
+.rules__item:nth-child(5) {
+  background-color: #64c805; }
+
+.rules__item:nth-child(6) {
+  background-color: #78f006; }
+
+.rules__item:nth-child(1) {
+  font-size: 15px; }
+
+.rules__item:nth-child(2) {
+  font-size: 16px; }
+
+.rules__item:nth-child(3) {
+  font-size: 17px; }
+
+.rules__item:nth-child(4) {
+  font-size: 18px; }
+
+.rules__item:nth-child(5) {
+  font-size: 19px; }
+
+.rules__item:nth-child(6) {
+  font-size: 20px; }
+
+.stair {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  width: 15px;
+  height: 15px; }
+
+.st-1 {
+  margin-left: 25px; }
+
+.st-2 {
+  margin-left: 50px; }
+
+.st-3 {
+  margin-left: 75px; }
+
+.st-4 {
+  margin-left: 100px; }
+
+.st-5 {
+  margin-left: 125px; }
+
+/*1 task*/
+th {
+  text-align: center;
+  font-weight: bold; }
+
+td, th {
+  cellspacing: 5px; }
+
+td {
+  width: 50px;
+  height: 20px; }
+
+td:nth-child(1) {
+  background: Yellow; }
+
+td:nth-child(2) {
+  background: MidnightBlue; }
+
+td:nth-child(3) {
+  background: Yellow; }
+
+td:nth-child(4) {
+  background: MidnightBlue; }
+
+td:nth-child(5) {
+  background: Yellow; }
+
+td:nth-child(5) {
+  background: Black; }
+
+td:nth-child(6) {
+  background: MidnightBlue; }
+
+td:nth-child(7) {
+  background: Yellow; }
+
+td:nth-child(8) {
+  background: MidnightBlue; }
+
+td:nth-child(8) {
+  background: SeaGreen; }
+
+td:nth-child(9) {
+  background: Yellow; }
+
+td:nth-child(10) {
+  background: MidnightBlue; }
+
+td:nth-child(10) {
+  background: Black; }
+
+td:nth-child(11) {
+  background: Yellow; }
+
+td:nth-child(12) {
+  background: MidnightBlue; }
+
+th {
+  text-align: center;
+  font-weight: bold; }
+
+td, th {
+  cellspacing: 5px; }
+
+td {
+  width: 50px;
+  height: 20px; }

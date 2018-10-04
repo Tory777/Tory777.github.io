@@ -1,0 +1,32 @@
+/*task5 Create a sass mixin for styling next HTML, rules for styling are:
+ "every next .rules__item should have font-size bigger then previous on 1px, and it should have randow color"*/
+
+$baseSize: 16;
+
+@mixin randomFontSizeGenerate($count: 6) {
+  @for $i from 1 through $count {
+   .rules__item:nth-child(#{$i}){
+    	background-color: rgb($i*20, $i*40, $i);
+    }
+  }
+}
+@mixin randomColorGenerate($count: 6) {
+  @for $i from 1 through $count {
+    .rules__item:nth-child(#{$i}){
+        font-size: (14 + $i) + px;
+    }
+  }
+}
+
+
+
+
+/*
+@mixin fontSize($size: 14) {
+  font-size: ($size / $baseSize) + rem;
+}
+
+%greyBorder {
+  border: 1px solid $mainBorderColor;
+}
+*/

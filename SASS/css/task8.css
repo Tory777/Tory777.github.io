@@ -1,0 +1,56 @@
+/*1 task*/
+th {
+  text-align: center;
+  font-weight: bold; }
+
+td, th {
+  cellspacing: 5px; }
+
+td {
+  width: 50px;
+  height: 20px; }
+
+td:nth-child(1) {
+  background: Yellow; }
+
+td:nth-child(2) {
+  background: MidnightBlue; }
+
+td:nth-child(3) {
+  background: Yellow; }
+
+td:nth-child(4) {
+  background: MidnightBlue; }
+
+td:nth-child(5) {
+  background: Yellow; }
+
+td:nth-child(5) {
+  background: Black; }
+
+td:nth-child(6) {
+  background: MidnightBlue; }
+
+td:nth-child(7) {
+  background: Yellow; }
+
+td:nth-child(8) {
+  background: MidnightBlue; }
+
+td:nth-child(8) {
+  background: SeaGreen; }
+
+td:nth-child(9) {
+  background: Yellow; }
+
+td:nth-child(10) {
+  background: MidnightBlue; }
+
+td:nth-child(10) {
+  background: Black; }
+
+td:nth-child(11) {
+  background: Yellow; }
+
+td:nth-child(12) {
+  background: MidnightBlue; }

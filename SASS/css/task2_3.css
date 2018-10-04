@@ -1,0 +1,26 @@
+/*2 task*/
+/*1 task*/
+button {
+  height: 40px;
+  padding-left: 14px;
+  padding-right: 14px; }
+  button:active {
+    background: #334432; }
+  button:focus {
+    background: #2a602d; }
+  button:hover {
+    background: #ffcccc; }
+
+/*3 task*/
+.tasks__wrapper3 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.tasks__wrapper3 li {
+  display: block;
+  padding: 6px 20px;
+  background: purple;
+  border: 1px solid #334432;
+  margin-top: 30px;
+  width: 300px; }

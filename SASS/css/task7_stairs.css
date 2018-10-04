@@ -1,0 +1,20 @@
+.stair {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  width: 15px;
+  height: 15px; }
+
+.st-1 {
+  margin-left: 25px; }
+
+.st-2 {
+  margin-left: 50px; }
+
+.st-3 {
+  margin-left: 75px; }
+
+.st-4 {
+  margin-left: 100px; }
+
+.st-5 {
+  margin-left: 125px; }

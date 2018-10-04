@@ -1,0 +1,11 @@
+/*task5 Create a sass mixin for styling next HTML, rules for styling are:
+ "every next .rules__item should have font-size bigger then previous on 1px, and it should have randow color"*/
+/*
+@mixin fontSize($size: 14) {
+  font-size: ($size / $baseSize) + rem;
+}
+
+%greyBorder {
+  border: 1px solid $mainBorderColor;
+}
+*/

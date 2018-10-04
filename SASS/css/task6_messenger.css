@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*1 task*/
+/*
+$icon-success   : 	url(‘img/success.png’);
+$icon-inform    :	url(‘img/inform.png’);
+$icon-warn 		: 	url(‘img/warn.png’);
+$icon-ops 	 : 		url(‘img/ops.png’);
+
+
+$icons_form: (
+ success        : $icon-width,
+ warning        : $icon-width,
+ info           : $icon-width,
+ ops			: $icon-width
+);
+*/
+.mess {
+  width: 300px;
+  color: #ffffff;
+  padding: .5rem;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .mess img {
+    margin-top: 15px;
+    margin-left: 15px; }
+  .mess--success {
+    background-color: #32CD32;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--error {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--warning {
+    background-color: #FF8C00;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--info {
+    background-color: #00BFFF;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--ops {
+    background-color: #ff0000;
+    border-radius: 10px;
+    margin: 15px; }
+  .mess--success {
+    height: 75px; }
+  .mess--error {
+    height: 100px; }
+  .mess--warning {
+    height: 75px; }
+  .mess--info {
+    height: 50px; }
+  .mess--ops {
+    height: 75px; }
+
+.mess--error {
+  color: #ff0000;
+  border: 1px solid grey;
+  margin-top: 0;
+  margin-left: 0; }

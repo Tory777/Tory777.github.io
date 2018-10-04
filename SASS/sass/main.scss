@@ -1,0 +1,14 @@
+@import 'task1_vars.scss';
+@import 'task2_3.scss';
+@import 'task4_template.scss';
+@import 'task5_mixins.scss';
+@import 'task6_messenger.scss';
+
+
+@include randomFontSizeGenerate(6);
+@include randomColorGenerate(6);
+
+@import 'task7_stairs.scss';
+@import 'task8.scss';
+@include table-build;
+
