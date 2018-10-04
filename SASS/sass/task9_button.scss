@@ -10,30 +10,11 @@ $color-warn    : #FF8C00;
 $color-hover: black;
 
 //Height
-$height-standart: 75px;
-$height-small: 50px;
-$height-big: 100px;
-
-//Other
-$border-radius: 10px;
-$margin: 15px;
-$icon-width: 30px;
-
-//Icons
-/*
-$icon-success   : 	url(‘img/success.png’);
-$icon-inform    :	url(‘img/inform.png’);
-$icon-warn 		: 	url(‘img/warn.png’);
-$icon-ops 	 : 		url(‘img/ops.png’);
-
-
-$icons_form: (
- success        : $icon-width,
- warning        : $icon-width,
- info           : $icon-width,
- ops			: $icon-width
+$size_button: (
+height-iddle: 100px,
+height-small: 50px,
+height-big: 200px,
 );
-*/
 
 $colors_button: (
  success        : $color-success,
@@ -44,57 +25,25 @@ $colors_button: (
 );
 
 
-$size_button: (
-success         : $size-standart,
- error          : $size-big,
- warning        : $size-standart,
- info           : $size-small,
- def		      	: $size-standart
-	);
-
   @each $class, $color in $colors_button {
   	.button-#{$class} {
   		background: $color;
-
   	}
-
-
-
-
-.mess {
-	width: 300px;
-	color: $color-font;
-
-   padding: .5rem;
-   text-align: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-
-   img{
-   	margin-top: $StandartMargin/2;
-   	margin-left: $StandartMargin/2;
-   }
-
-
-   @each $theme, $color in $colors_form {
-     &--#{$theme} {
-       background-color: $color;
-       border-radius: $border-radius;
-   		margin: $margin;
-     }
-   }
-   @each $theme, $height in $height_form {
-     &--#{$theme} {
-       height: $height;
-     }
-   }
-
-
 }
 
-.mess--error{
-	color: $color-ops;
-	border: 1px solid grey;
-	margin-top: 0;
-   	margin-left: 0;
-}
+    @for $i from 1 through 5{
+        	.buttons button:nth-child(#{$i}){
+          height: map-get($size_button, height-small);
+        }
+      }
+
+    @for $i from 6 through 10{
+        .buttons button:nth-child(#{$i}){
+         height: map-get($size_button, height-iddle);
+      }
+    }
+    @for $i from 11 through 15{
+            .buttons button:nth-child(#{$i}){
+         height: map-get($size_button, height-big);
+        }
+      }
