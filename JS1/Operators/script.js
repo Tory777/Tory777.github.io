@@ -16,7 +16,8 @@ var r = '6' + [];	//'6' - string
 
 /* Answer
 
-It is due to the fact that in the binary system 2/3 and 1/3 - this infinite fractions recorded up to a certain value. We can fix it by 'toFixed': result = 2/3 + 1 + 1/3 console.log(+result.toFixed(10)==2)*/
+It is due to the fact that in the binary system 2/3 and 1/3 - this infinite fractions recorded up to a certain value. 
+We can fix it by 'toFixed': result = 2/3 + 1 + 1/3 console.log(+result.toFixed(10)==2)*/
 
 //3 задание - Определите результат в следующих случаях:
 
