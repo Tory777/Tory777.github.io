@@ -17,7 +17,28 @@ for (var i = 1; i < 101; i++) {
     console.log(i,'Buzz');}
 }
 //task 3
-
+var j = 0;
+var a = prompt('Введите число А:');
+var b = prompt('Введите число B:');
+if (a>0 && b>0 && b>=a){
+  for (var i = a; i >0; i--) {
+      if(a%i==0 && b%i==0) {
+        if(j>0) break;
+        j++;
+        console.log(i,'greatest common divisor');}
+      }
+}
+else if(a>0 && b>0 && a>b){
+  for (var i = b; i >0; i--) {
+      if(a%i==0 && b%i==0) {
+        if(j>0) break;
+        j++;
+        console.log(i,'greatest common divisor');}
+      }
+}
+else if(a<0 || b<0){
+        alert('Вы ввели отрицательное число, обновите страницу и попробуйте еще раз!');
+}
 
 //task 4
 var summa=0; 
