@@ -41,3 +41,9 @@ for (var i = 10; i <= 90; i++) {
 else if(i%5==0){
    console.log(i);}
 }*/
+
+//task 6
+for (var i = 70; i >10; i--) {
+  if(i%2!=0){
+    console.log(i,'is odd');
+  }}
