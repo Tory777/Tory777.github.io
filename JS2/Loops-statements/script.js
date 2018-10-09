@@ -43,7 +43,13 @@ else if(i%5==0){
 }*/
 
 //task 6
-for (var i = 70; i >10; i--) {
+for (var i = 70; i>10; i--) {
   if(i%2!=0){
     console.log(i,'is odd');
+  }}
+
+//task 7
+for (var i = 78; i>12; i--) {
+  if(i%2==0 && i%3==0){
+    console.log(i,'- even and divide to 2 and 3');
   }}
