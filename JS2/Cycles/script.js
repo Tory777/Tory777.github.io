@@ -46,7 +46,7 @@ var month = date.getMonth();
 var arr=['Jan','Feb','Marz','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 for (var i = 0; i < arr.length; i++) {
     if  (i == month) {
-    document.write(months[i].bold())}     //not sure about this. rumor has it that it is outdated
-    else {document.write(months[i])}
+    document.write(month[i].bold())}     //not sure about this. rumor has it that it is outdated
+    else {document.write(month[i])}
 }
 console.log('Current mounth is ', arr[month])
