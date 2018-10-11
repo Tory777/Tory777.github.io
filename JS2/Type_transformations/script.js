@@ -25,10 +25,12 @@ var pr = 9; var g = 0;
 
 4 задание Каким будет результат следующих выражений:
 
-var i = '1'; var j = 8; var m = 7;
+var i = '1';
+var j = 8;
+var m = 7;
 
-(j - m) == i;           // true
-(j - m) === i; ?        // false
+(m - j) == j;       // false
+(m - j) === j;      // false
 
 (m - 6) && j && console.log('Hi'); //'Hi'
 
