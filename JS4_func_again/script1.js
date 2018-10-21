@@ -63,16 +63,19 @@ console.log(arr);
 Create a function that will get a date as an argument (also check if it is a date), 
 and return an object: { day: your_value, month: your_value, year: your_value }*/
 
-var myDate = new Date(2025-12-31);
+var mydate = new Date('2025-12-31');
 function dayToObj(date){
-	var dateObj = {}
-	if(date instanceof Date && !isNaN(date.valueOf())){
-		dateObj.year = date.getFullYear();
+  var dateObj = {}
+  if(date instanceof Date && !isNaN(date.valueOf())){
+	  dateObj.year = date.getFullYear();
 		dateObj.month = date.getMonth()+1;
-		dateObj.day = date.getDate();
-	} else {
-		console.log('Dude, it is not a date!')}}
-console.log(dayToObj(myDate))
+		dateObj.day = date.getDate();} 
+  else{return 'Dude, it is not a date!'}
+  return dateObj} 
+
+console.log(dayToObj(mydate))
+console.log(dayToObj(121212))
+console.log(dayToObj('hi'))
 
 
 /*task6 
