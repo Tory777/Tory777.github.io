@@ -166,7 +166,7 @@ function sec_to_date(sec){
   sec = sec%3600;
   var min = Math.floor(sec/60);
   sec = sec%60;
-  console.log(dd +' day(s) '+ hour + ' hour(s) '+ min + ' min ' + sec + ' sec')
+  console.log(dd + ' day(s) '+ hour + ' hour(s) '+ min + ' min ' + sec + ' sec')
 }
 sec_to_date(199999)
 
