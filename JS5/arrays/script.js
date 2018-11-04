@@ -41,20 +41,60 @@ var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', '
 console.log( anClean(arr) ); // 'воз,киборг,корсет' или 'ЗОВ,гробик,сектор'*/ 
 
 
-/*4 задание
+/*4 задание +
 Создайте программу которая соеденит массив в строку, поменяет местами буквы в словах и порядок следования слов в массиве:
 var arr = [ 'rrrA', 'toboR', 'ekiL', 'dooG', 'esoR' ]; */
 
+var arr = [ 'rrrA', 'toboR', 'ekiL', 'dooG', 'esoR' ];
+function reversArr(arr) {
+  arr = arr.join(' ')
+  arr = arr.split('').reverse().join('');
+  console.log(arr);
+}
+reversArr(arr)
 
-/*5 задание
+/*5 задание  + 
 Найти сумму целых чисел от 1 до 100
 Найти сумму четных чисел от 0 до 100.*/
+
+var n = 100
+function sum(num) {
+  var res = 0;
+  for (var i = 1; i <= num; i++) {
+    res += i;
+  }
+  return res;
+}
+console.log(sum(n))
+
+function sumEven(num) {
+  var res = 0;
+  for (var i = 0; i <= num; i++) {
+    if( i%2 == 0){
+      res += i;
+    }
+  }
+  return res;
+}
+console.log(sumEven(n))
 
 /*6 задание
 Напишите функцию callMe которая будет принимать 3 аругумента, это будут цыфры, 
 потом она будет суммировать их и выводить на екран результат их суммы!
 Если в нее передели не числа то она должна выводить сообщение об ошибке в консоль и возвращать null; 
 (вывод ошибки в консоль осуществялется через console.error("Тут текст ошибки") ) */
+
+var num1 = 1  
+var num2 = 2
+var num3 = 3
+function callMe(a,b,c){
+    if(typeof a == Number & typeof b == Number & typeof c == Number){
+      var res = a + b + c
+      return res;
+    }
+  else{return false}
+}
+console.log(callMe(1,5,8))
 
 
 /*7 задание
