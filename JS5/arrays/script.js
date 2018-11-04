@@ -1,27 +1,35 @@
-/*1 задание
+/*1 задание +
 Из массива arr выведите строку которая будет равна "Мама мыла раму" используя встроенные методы массива 
 (если есть лишние елементы в массиве их нужно удалить!):  */
 
 var arr = ["у", "м", "а", "р", " ", "а", "л", "ы", "м", 5, " ", "а", "м", "а", "М", 1];
 
+arr.forEach(function(item, i, arr) {
+  if (typeof (item) !== "string") {
+    arr.splice(i, 1);
+    }
+});
+console.log(arr.reverse().join(''));
 
-/*2 задание
+/*2 задание +
 Палиндром - это строка которая читается с обоих сторон одинаково. Например: Анна, оно, А роза упала на лапу Азора.
 Необходимо написать функцию isPal(string) которая возвращает true или false в зависимости от того 
 является ли строка палиндромом или нет. */
 
-  function isPal(str) {
+function isPalindrome(str) {
     var strLen = str.length,
-        strReverse = str.split('').reverse().join(''); //Разбиваем строку посимвольно  и превращаем ее в массив с помощью split(''), потом применяем к нему метод reverse() и собираем все символы в строку с помощью join('')
+        strReverse = str.split('').reverse().join(''); 
     if (strReverse == str) {
       return 'yes';
     } else {
       return 'no';
     }
   }
-  test = isPal('А роза упала на лапу Азора');
-  test2 = isPal('abcded');
-  console.log('isPal result: ' + 'str - ' + test + ', str2 - ' + test2);
+  test = isPalindrome('abcdedcba');
+  test2 = isPalindrome('balda');
+  console.log(test);
+  console.log(test2);
+  document.write('isPalindrome result: ' + 'str - ' + test + ' str2 - ' + test2);
 
 
 /*3 задание
