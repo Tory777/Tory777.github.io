@@ -110,9 +110,19 @@ function callMe(a,b,c){
 console.log(callMe(num1, num2, num3))
 
 
-/*7 задание
+/*7 задание   +  
 Напишите функцию callMeAgain которая будет принимать 1 аргумент, который будет массивом. 
 Она должна возвращать массив соедененный через запятые и отсортированный по алфавиту (Array.join(','));  */
+
+var myarr = ['Вода', 'огонь', 'Воздух', 'земля', 'стихии', 'отсортировать', 'по алфавиту'];
+function anClean(arr){
+  var result = [];
+  for (var i = 0; i< arr.length; i++){
+    result.push(arr[i].toLowerCase());
+  }
+    result.sort();
+    return result;}
+console.log(anClean(myarr));
 
 /*8 задание  + 
 Дан массив объектов:
