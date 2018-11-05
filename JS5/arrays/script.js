@@ -154,10 +154,37 @@ for(var i = 0; i < arr.length; i++) {
   console.log(arr[i].name, arr[i].age);
 }
 
-/* 9 задание
+/* 9 задание  +
 Через prompt узнайте у пользователя его имя и возраст, и запишите в отсортированный массив с 8 задания в правильную позицию, 
 чтобы все элементы в массиве остались отсортированные по полю age
 Если такой пользователь уже существует в массиве верните пользователю сообщение: "Такой пользователь уже существует"  */
+
+var arr = [
+   {name: "L1", age: 45},
+   {name: "L2", age: 20},
+   {name: "L3", age: 10},
+   {name: "L4", age: 78},
+   {name: "L5", age: 41},
+   {name: "L6", age: 10}
+];
+function compareAge(man1, man2) {
+  return man1.age - man2.age;
+}
+arr.sort(compareAge);
+for(var i = 0; i < arr.length; i++) {
+  console.log(arr[i].name, arr[i].age);}
+
+//add User
+var nameNewUser=prompt('Put Your Name',);     
+var ageNewUser=prompt('Put Your Age',);
+var newUser= {name: nameNewUser, age: ageNewUser};
+for(var i = 0; i < arr.length; i++) {
+    if (newUser.name == arr[i].name & newUser.age == arr[i].age){
+        alert("Такой пользователь уже существует"); break;}}
+arr.push(newUser)
+arr.sort(compareAge)
+console.log(arr);
+
 
 /*10 task   +
 Дан массив с числами. Подсчитайте количество цифр 3 в данном массиве.
@@ -216,39 +243,50 @@ else if (a.length > b.length){
 console.log(res)
 
 
-/*13 task  no work
+/*13 task  +
 Дан массив. Напишите функцию, которая будет удалять элемент из массива по его тексту.
 Пример: arr = [1,2,3,4,3,3]. Удалим все элементы с содержимым 3: func(arr, 3).  */
 
-arr  = [13, 35, 12, 3, 443, 55];
- for (var i = 0; i< arr.length; i++){
-   for (var j = 0; j< arr[i].length; i++){
-           if (arr[i][j]==3){
-           console.log(arr[i][j])
-           arr.splice(i)}} 
+var arr = [1,2,3,4,3,3];
+function removeNum(arr, num) {
+  return arr.filter(function (item) {
+    return item !== num;})
 }
-console.log(arr)
+console.log(removeNum(arr,3));
 
-/*14 task copy
+/*14 task +
 Реализуйте функцию intersection, вернёт массив из элементов, встречающихся в каждом из переданных массивов.
 Пример: intersection([1, 2, 3], [101, 2, 1, 10], [2, 1]) вернёт [1, 2].*/
 
-function Intersec(arr1,arr2){
- var idx = 0, arr3 = [];
-
+arr1 = [5, 11 , 69, 777, 3]
+arr2 = [96, 4, 696, 5, 69]
+function cross(arr1,arr2){
+ var t = 0, arrCross = [];
  for (var i = 0; i < arr2.length; i++)
-     {
-       idx = arr1.indexOf(arr2[i]);
-       if (idx >= 0) arr3.push(arr2[i]);
+     {t = arr1.indexOf(arr2[i]);
+      console.log(t)
+       if (t >= 0) arrCross.push(arr2[i]);
      }
-
- return arr3;
+ return arrCross;
 }
-console.log(Intersec([1,7,2,8,5,12,45,67],[3,4,5,1,2]))
+console.log(cross(arr1,arr2))
 
-15 task
+/*15 task  +
 Дан массив с числами, к примеру [2, 3, 1, 4]. Сделайте из него массив [2, 2, 3, 3, 3, 1, 4, 4, 4, 4]. 
-В массиве могут быть только целые положительные числа.
+В массиве могут быть только целые положительные числа.  */
+
+var a = [2, 3, 1, 4]; 
+var newArr = []
+var n
+function mult(arr){
+  for (var i = 0; i < arr.length; i++){
+  n = arr[i]
+    for (var j = 0; j < n; j++)
+         newArr.push(n)
+  }
+  return newArr
+  }
+console.log(mult(a))
 
 /*16 task  +
 Реализуйте функцию, которая будет дополнять массив заданными элементами до заданного размера. 
@@ -263,7 +301,20 @@ function addNull(){
   }
 console.log(addNull(a))
 
-17 task
+/* 17 task
 Дан массив с числами. Не используя цикл, выведите:
 Три самых маленьких числа в массиве (числа должны быть разные, дубли должны быть проигнорированы).
-Первые 3 отрицательных числа в массиве (по порядку следования).
+Первые 3 отрицательных числа в массиве (по порядку следования). */
+
+var myarr = [ 0, 15, -2, 3, -99, -69, -69, -3];
+ myarr.sort(function(a, b) {
+   return a - b;
+ });
+var newArr = Array.from(new Set(myarr));
+console.log(newArr.slice(0, 3));
+
+var myarr = [ 0, 15, -2, 3, -99, 69, -69, -3];
+var negArr = myarr.filter(function(num) {
+return num < 0;
+ });
+ console.log(negArr.slice(0,3))
