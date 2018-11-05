@@ -307,11 +307,19 @@ console.log(addNull(a))
 Первые 3 отрицательных числа в массиве (по порядку следования). */
 
 var myarr = [ 0, 15, -2, 3, -99, -69, -69, -3];
- myarr.sort(function(a, b) {
-   return a - b;
+function unique(arr) {
+  var obj = {};
+  for (var i = 0; i < arr.length; i++) {
+    var str = arr[i];
+    obj[str] = true; // запомнить строку в виде свойства объекта
+  } 
+    var res = Object.keys(obj);
+    res.sort(function(a, b) {
+     return a - b;
  });
-var newArr = Array.from(new Set(myarr));
-console.log(newArr.slice(0, 3));
+  return res} 
+console.log(unique(myarr).slice(0, 3)); 
+
 
 var myarr = [ 0, 15, -2, 3, -99, 69, -69, -3];
 var negArr = myarr.filter(function(num) {
